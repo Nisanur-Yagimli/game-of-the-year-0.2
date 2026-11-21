@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of the Year</title>
+    <link rel="icon" href="logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+    <div class="container text-center ust-alan">
+        <p class="altin-yazi mb-1">THE GAME AWARDS</p>
+        <h1 class="ana-baslik">GAME OF THE YEAR</h1>
+        <p class="aciklama-metni mx-auto">
+            Oyun dünyasının en prestijli ödülü olan Game of the Year; teknik başarısı, anlatı gücü ve oyuncular üzerinde bıraktığı etkiyle yıla damga vuran en iyi yapımı onurlandırır. İşte büyük ödül için yarışan 6 aday.
+        </p>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card oyun-karti" data-bs-toggle="modal" data-bs-target="#oyun1Modal">
+                    <img src="oyun1.jpg" class="card-img oyun-resim" alt="Grand Theft Auto VI">
+                    <div class="card-img-overlay kart-icerik">
+                        <span class="altin-yazi">ROCKSTAR GAMES</span>
+                        <h3 class="oyun-adi">GRAND THEFT AUTO VI</h3>
+                        <p class="kisa-yazi">Leonida eyaleti ve modern Vice City sokaklarında geçen, Jason ve Lucia'nın suç ortaklığını konu alan açık dünya aksiyon-macera oyunu. Detaylar için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card oyun-karti" data-bs-toggle="modal" data-bs-target="#oyun2Modal">
+                    <img src="oyun2.jpg" class="card-img oyun-resim" alt="Resident Evil Requiem">
+                    <div class="card-img-overlay kart-icerik">
+                        <span class="altin-yazi">CAPCOM</span>
+                        <h3 class="oyun-adi">RESIDENT EVIL REQUIEM</h3>
+                        <p class="kisa-yazi">FBI analisti Grace Ashcroft ve ajan Leon S. Kennedy'yi Raccoon City'nin karanlık sırlarıyla yüzleştiren hayatta kalma korku oyunu. Detaylar için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card oyun-karti" data-bs-toggle="modal" data-bs-target="#oyun3Modal">
+                    <img src="oyun3.jpg" class="card-img oyun-resim" alt="007 First Light">
+                    <div class="card-img-overlay kart-icerik">
+                        <span class="altin-yazi">IO INTERACTIVE</span>
+                        <h3 class="oyun-adi">007 FIRST LIGHT</h3>
+                        <p class="kisa-yazi">Genç MI6 acemisi James Bond'un zorlu görevleri tamamlayarak efsanevi 00 statüsünü kazanma yolculuğunu anlatan casusluk oyunu. Detaylar için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card oyun-karti" data-bs-toggle="modal" data-bs-target="#oyun4Modal">
+                    <img src="oyun4.jpg" class="card-img oyun-resim" alt="Control Resonant">
+                    <div class="card-img-overlay kart-icerik">
+                        <span class="altin-yazi">REMEDY ENTERTAINMENT</span>
+                        <h3 class="oyun-adi">CONTROL RESONANT</h3>
+                        <p class="kisa-yazi">Dylan Faden'ın doğaüstü güçleriyle Hiss istilasına ve boyutlar arası anomalilere karşı verdiği mücadeleyi konu alan aksiyon-RYO. Detaylar için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card oyun-karti" data-bs-toggle="modal" data-bs-target="#oyun5Modal">
+                    <img src="oyun5.jpg" class="card-img oyun-resim" alt="The Legend of Zelda: Ocarina of Time">
+                    <div class="card-img-overlay kart-icerik">
+                        <span class="altin-yazi">NINTENDO</span>
+                        <h3 class="oyun-adi">THE LEGEND OF ZELDA: OCARINA OF TIME</h3>
+                        <p class="kisa-yazi">1998 klasiğinin Nintendo Switch 2 için tamamen yenilenen sürümünde genç Link, Hyrule krallığını kurtarmak için zaman yolculuğuna çıkar. Detaylar için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card oyun-karti" data-bs-toggle="modal" data-bs-target="#oyun6Modal">
+                    <img src="oyun6.jpg" class="card-img oyun-resim" alt="Phantom Blade Zero">
+                    <div class="card-img-overlay kart-icerik">
+                        <span class="altin-yazi">S-GAME</span>
+                        <h3 class="oyun-adi">PHANTOM BLADE ZERO</h3>
+                        <p class="kisa-yazi">Yalnızca 66 günlük ömrü kalan suikastçı Soul'un intikam ve hayatta kalma mücadelesini işleyen kung-fu punk temalı aksiyon-RYO. Detaylar için tıklayın.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="oyun1Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content goty-modal">
+                <div class="modal-header border-secondary">
+                    <div>
+                        <span class="altin-yazi d-block">ROCKSTAR GAMES</span>
+                        <h5 class="modal-title oyun-adi">GRAND THEFT AUTO VI</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <img src="oyun1.jpg" class="modal-resim" alt="Grand Theft Auto VI">
+                        </div>
+                        <div class="col-md-7">
+                            <p><strong class="text-warning">Çıkış Tarihi:</strong> 19 Kasım 2026 (PlayStation 5, Xbox Series X/S)</p>
+                            <p><strong class="text-warning">Konusu ve Hikâyesi:</strong> Açık dünya aksiyon-macera türündeki yapım, kurgusal Leonida eyaletinde ve modern Vice City'de geçer. Lucia ve ortağı Jason'ın birbirine duyduğu güven üzerine kurulu suç ortaklığı, eyalet geneline yayılan karanlık bir komplonun ortasında hayatta kalma mücadelesine dönüşür.</p>
+                            <p><strong class="text-warning">Oyuncu Yorumları ve Aldığı Ödüller:</strong> Tanıtım fragmanlarıyla rekorlar kıran yapım, çıkışından önce The Game Awards'ta "En Çok Beklenen Oyun" ödülünü kazanmıştır. The Game Awards 2026'da ise Yılın Oyunu, En İyi Oyun Yönetimi, En İyi Anlatı, En İyi Sanat Yönetimi ve En İyi Performans dallarında adaydır.</p>
+                            <p class="mb-0"><strong class="text-warning">Game of the Year Potansiyeli:</strong> Canlı açık dünya detayları ve yarattığı devasa etkiyle ödül gecesinin en güçlü favorisi konumundadır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="oyun2Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content goty-modal">
+                <div class="modal-header border-secondary">
+                    <div>
+                        <span class="altin-yazi d-block">CAPCOM</span>
+                        <h5 class="modal-title oyun-adi">RESIDENT EVIL REQUIEM</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <img src="oyun2.jpg" class="modal-resim" alt="Resident Evil Requiem">
+                        </div>
+                        <div class="col-md-7">
+                            <p><strong class="text-warning">Çıkış Tarihi:</strong> 27 Şubat 2026 (PC'de 26 Şubat 2026)</p>
+                            <p><strong class="text-warning">Konusu ve Hikâyesi:</strong> Hayatta kalma korku türündeki oyunda FBI analisti Grace Ashcroft, Raccoon City felaketinden sağ kurtulanları hedef alan gizemli ölümleri araştırırken federal ajan Leon S. Kennedy ile güçlerini birleştirir.</p>
+                            <p><strong class="text-warning">Oyuncu Yorumları ve Aldığı Ödüller:</strong> Steam'de %96 "Son Derece Olumlu" kullanıcı incelemesi almış ve Temmuz 2026 itibarıyla 8 milyonun üzerinde satış rakamına ulaşmıştır. The Game Awards 2026'da Yılın Oyunu, En İyi Oyun Yönetimi, En İyi Anlatı ve En İyi Performans dallarında aday gösterilmiştir.</p>
+                            <p class="mb-0"><strong class="text-warning">Game of the Year Potansiyeli:</strong> Çift karakterli oynanış yapısı ve saf gerilim atmosferiyle yılın en başarılı yapımlarından biri olarak zirveyi zorlamaktadır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="oyun3Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content goty-modal">
+                <div class="modal-header border-secondary">
+                    <div>
+                        <span class="altin-yazi d-block">IO INTERACTIVE</span>
+                        <h5 class="modal-title oyun-adi">007 FIRST LIGHT</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <img src="oyun3.jpg" class="modal-resim" alt="007 First Light">
+                        </div>
+                        <div class="col-md-7">
+                            <p><strong class="text-warning">Çıkış Tarihi:</strong> 27 Mayıs 2026 (PC'de 26 Mayıs 2026)</p>
+                            <p><strong class="text-warning">Konusu ve Hikâyesi:</strong> Üçüncü şahıs casusluk ve aksiyon-macera türündeki yapım, henüz "00" statüsüne ulaşmamış genç MI6 ajanı James Bond'un akıl hocası John Greenway ile çıktığı görevlerde öldürme yetkisini kazanma hikâyesini anlatır.</p>
+                            <p><strong class="text-warning">Oyuncu Yorumları ve Aldığı Ödüller:</strong> Steam'de %90 "Çok Olumlu" puan alan oyun Ağustos 2026'ya kadar 4 milyon kopya satmıştır. The Game Awards 2026'da Yılın Oyunu, En İyi Anlatı ve En İyi Performans (Patrick Gibson) dallarında adaydır.</p>
+                            <p class="mb-0"><strong class="text-warning">Game of the Year Potansiyeli:</strong> Hitman serisinin geliştiricisi IO Interactive'in özgürlükçü görev tasarımı ve klasik Bond atmosferiyle yılın en güçlü sürpriz adaylarındandır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="oyun4Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content goty-modal">
+                <div class="modal-header border-secondary">
+                    <div>
+                        <span class="altin-yazi d-block">REMEDY ENTERTAINMENT</span>
+                        <h5 class="modal-title oyun-adi">CONTROL RESONANT</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <img src="oyun4.jpg" class="modal-resim" alt="Control Resonant">
+                        </div>
+                        <div class="col-md-7">
+                            <p><strong class="text-warning">Çıkış Tarihi:</strong> 24 Eylül 2026</p>
+                            <p><strong class="text-warning">Konusu ve Hikâyesi:</strong> 2019 yapımı Control'ün devamı niteliğindeki aksiyon-RYO oyununda, Federal Kontrol Bürosu (FBC) evreni genişlerken Dylan Faden doğaüstü güçlerini kullanarak gerçekliği tehdit eden Hiss istilasına karşı savaşır.</p>
+                            <p><strong class="text-warning">Oyuncu Yorumları ve Aldığı Ödüller:</strong> Remedy Entertainment'ın bugüne kadarki en kapsamlı oyunu olarak eleştirmenlerden olumlu yorumlar almış; The Game Awards 2026'da Yılın Oyunu, En İyi Oyun Yönetimi, En İyi Anlatı ve En İyi Sanat Yönetimi dallarında aday gösterilmiştir.</p>
+                            <p class="mb-0"><strong class="text-warning">Game of the Year Potansiyeli:</strong> Özgün görsel dili ve sıra dışı bilim kurgu anlatımıyla jüri üyelerinin sanat ve yönetim oylarında iddialı bir konumdadır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="oyun5Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content goty-modal">
+                <div class="modal-header border-secondary">
+                    <div>
+                        <span class="altin-yazi d-block">NINTENDO</span>
+                        <h5 class="modal-title oyun-adi">THE LEGEND OF ZELDA: OCARINA OF TIME</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <img src="oyun5.jpg" class="modal-resim" alt="The Legend of Zelda: Ocarina of Time">
+                        </div>
+                        <div class="col-md-7">
+                            <p><strong class="text-warning">Çıkış Tarihi:</strong> 5 Kasım 2026 (Nintendo Switch 2 Yeniden Yapımı)</p>
+                            <p><strong class="text-warning">Konusu ve Hikâyesi:</strong> 1998 klasiğinin baştan sona yenilenen bu sürümünde genç Link, kutsal Triforce gücünü ele geçirmeye çalışan Ganondorf'u durdurmak için Zaman Tapınağı'ndaki Usta Kılıç ile 7 yıllık bir zaman yolculuğuna çıkar.</p>
+                            <p><strong class="text-warning">Oyuncu Yorumları ve Aldığı Ödüller:</strong> Yenilenen grafikleri, seslendirilmiş ara sahneleri ve senfonik müzikleriyle ilk 4 günde 5,2 milyonun üzerinde satmıştır. The Game Awards 2026'da Yılın Oyunu, En İyi Sanat Yönetimi ve En İyi Müzik dallarında adaydır.</p>
+                            <p class="mb-0"><strong class="text-warning">Game of the Year Potansiyeli:</strong> Oyun tarihinin en sevilen efsanelerinden birinin modern donanımla kusursuz buluşması, onu ödülün en güçlü adaylarından biri yapmaktadır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="oyun6Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content goty-modal">
+                <div class="modal-header border-secondary">
+                    <div>
+                        <span class="altin-yazi d-block">S-GAME</span>
+                        <h5 class="modal-title oyun-adi">PHANTOM BLADE ZERO</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <img src="oyun6.jpg" class="modal-resim" alt="Phantom Blade Zero">
+                        </div>
+                        <div class="col-md-7">
+                            <p><strong class="text-warning">Çıkış Tarihi:</strong> 29 Ekim 2026 (PC'de 28 Ekim 2026)</p>
+                            <p><strong class="text-warning">Konusu ve Hikâyesi:</strong> "Kung-fu punk" estetiğine sahip aksiyon-RYO türündeki oyunda, işlemediği bir cinayetle suçlanan ve gizemli bir şifacı tarafından hayata döndürüldükten sonra yalnızca 66 günlük ömrü kalan suikastçı Soul'un intikam mücadelesi işlenir.</p>
+                            <p><strong class="text-warning">Oyuncu Yorumları ve Aldığı Ödüller:</strong> Çıktığı ilk 3 günde 4 milyonun üzerinde satışa ulaşmış ve Steam'de %93 "Çok Olumlu" kullanıcı puanı almıştır. The Game Awards 2026'da Yılın Oyunu, En İyi Aksiyon Oyunu ve En İyi Sanat Yönetimi dallarında adaydır.</p>
+                            <p class="mb-0"><strong class="text-warning">Game of the Year Potansiyeli:</strong> Hızlı kılıç koreografisi ve karanlık atmosferiyle yılın en iyi aksiyon deneyimi olarak büyük ödül için güçlü bir rakiptir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="arkaPlanMuzik" loop>
+        <source src="muzik.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="plak-kutusu" id="plakKutusu" onmouseenter="paneliGoster()" onmouseleave="paneliGizleZamanla()">
+        <div class="plak-dis" onclick="plakKontrol()" title="Müziği Başlat / Durdur">
+            <div class="plak-disk" id="plakDisk">
+                <div class="plak-oluklar"></div>
+                <div class="plak-etiket">
+                    <div class="plak-delik"></div>
+                </div>
+            </div>
+            <div class="gramofon-kol" id="gramofonKol"></div>
+        </div>
+
+        <div class="plak-panel" id="plakPanel">
+            <input type="range" id="sureCubugu" class="sure-cubugu" value="0" min="0" max="100" oninput="saniyeSec()">
+            <span id="sureYazisi" class="sure-yazisi">0:00</span>
+        </div>
+    </div>
+
+    <script>
+            var muzik = document.getElementById("arkaPlanMuzik");
+            var plak = document.getElementById("plakDisk");
+            var kol = document.getElementById("gramofonKol");
+            var panel = document.getElementById("plakPanel");
+            var cubuk = document.getElementById("sureCubugu");
+            var sureYazi = document.getElementById("sureYazisi");
+            var gizleZamanlayici;
+
+            function plakKontrol() {
+                if (muzik.paused) {
+                    muzik.play();
+                    plak.classList.add("donuyor");
+                    kol.classList.add("caliyor");
+                    paneliGoster();
+                    paneliGizleZamanla();
+                } else {
+                    muzik.pause();
+                    plak.classList.remove("donuyor");
+                    kol.classList.remove("caliyor");
+                    clearTimeout(gizleZamanlayici);
+                    panel.classList.remove("acik");
+                }
+            }
+
+            function paneliGoster() {
+                clearTimeout(gizleZamanlayici);
+                if (!muzik.paused) {
+                    panel.classList.add("acik");
+                }
+            }
+
+            function paneliGizleZamanla() {
+                clearTimeout(gizleZamanlayici);
+                if (!muzik.paused) {
+                    gizleZamanlayici = setTimeout(function () {
+                        panel.classList.remove("acik");
+                    }, 2500);
+                }
+            }
+
+            muzik.ontimeupdate = function () {
+                if (muzik.duration) {
+                    var yuzde = (muzik.currentTime / muzik.duration) * 100;
+                    cubuk.value = yuzde;
+                    cubuk.style.background = "linear-gradient(to right, #c8aa6e " + yuzde + "%, rgba(255,255,255,0.2) " + yuzde + "%)";
+                    var dk = Math.floor(muzik.currentTime / 60);
+                    var sn = Math.floor(muzik.currentTime % 60);
+                    if (sn < 10) sn = "0" + sn;
+                    sureYazi.innerText = dk + ":" + sn;
+                }
+            };
+
+            function saniyeSec() {
+                if (muzik.duration) {
+                    muzik.currentTime = (cubuk.value / 100) * muzik.duration;
+                }
+            }
+    </script>
+</body>
+</html>

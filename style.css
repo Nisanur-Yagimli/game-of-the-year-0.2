@@ -1,0 +1,258 @@
+﻿body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ust-alan {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c8aa6e;
+    margin-bottom: 50px;
+}
+
+.altin-yazi {
+    color: #c8aa6e;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.ana-baslik {
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.aciklama-metni {
+    max-width: 680px;
+    color: #cccccc;
+    font-size: 16px;
+}
+
+.oyun-karti {
+    background-color: #111111;
+    border: 1px solid #c8aa6e;
+    border-radius: 0;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.oyun-karti:hover {
+    transform: scale(1.04);
+    border-color: #ffffff;
+}
+
+.oyun-resim {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: 0.3s;
+}
+
+.oyun-karti:hover .oyun-resim {
+    opacity: 0.35;
+}
+
+.kart-icerik {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 25px;
+}
+
+.oyun-adi {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.kisa-yazi {
+    display: none;
+    color: #e0e0e0;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.oyun-karti:hover .kisa-yazi {
+    display: block;
+}
+
+.goty-modal {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #c8aa6e;
+    border-radius: 0;
+}
+
+.modal-resim {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid #c8aa6e;
+}
+.plak-kutusu {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.plak-dis {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.plak-disk {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient( from 45deg, #0d0d0d 0deg, #2b2b2b 40deg, #0d0d0d 90deg, #262626 140deg, #0d0d0d 180deg, #2b2b2b 220deg, #0d0d0d 270deg, #262626 320deg, #0d0d0d 360deg );
+    border: 1.5px solid #c8aa6e;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.plak-dis:hover .plak-disk {
+    box-shadow: 0 0 18px rgba(200, 170, 110, 0.55);
+}
+
+.plak-oluklar {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5), inset 0 0 0 5px rgba(255, 255, 255, 0.06);
+}
+
+.plak-etiket {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #e5c98b 0%, #c8aa6e 70%, #9b7e46 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.plak-delik {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.gramofon-kol {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 22px;
+    height: 4px;
+    background: linear-gradient(to right, #c8aa6e, #ffffff);
+    border-radius: 2px;
+    transform-origin: right center;
+    transform: rotate(-55deg);
+    transition: transform 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: 3;
+}
+
+    .gramofon-kol::after {
+        content: "";
+        position: absolute;
+        right: -2px;
+        top: -2px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #c8aa6e;
+        border: 1px solid #000000;
+    }
+
+    .gramofon-kol.caliyor {
+        transform: rotate(-28deg);
+    }
+
+.donuyor {
+    animation: plakDonus 3.5s linear infinite;
+}
+
+@keyframes plakDonus {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.plak-panel {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(15, 15, 15, 0.88);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(200, 170, 110, 0.6);
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    height: 40px;
+    margin-left: -22px;
+    padding: 0;
+    transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease, padding 0.4s ease;
+    z-index: 1;
+}
+
+    .plak-panel.acik {
+        width: 235px;
+        opacity: 1;
+        padding: 0 18px 0 32px;
+    }
+
+.sure-cubugu {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+    .sure-cubugu::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #c8aa6e;
+        border: 1.5px solid #ffffff;
+        cursor: pointer;
+        box-shadow: 0 0 6px rgba(200, 170, 110, 0.9);
+    }
+
+.sure-yazisi {
+    color: #c8aa6e;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    min-width: 32px;
+}
